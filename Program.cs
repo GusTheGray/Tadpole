@@ -19,7 +19,7 @@ namespace Tadpole
             Console.Clear();
 
             //starts the webpage
-            IWebDriver driver = new ChromeDriver(@"C:\Users\Owner\source\repos\Tadpole\bin\Debug\netcoreapp2.2");
+            IWebDriver driver = new ChromeDriver(@"..\netcoreapp2.2");
             driver.Url = "https://www.tadpoles.com/home_or_work";
             
             //Log in to site
