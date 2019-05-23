@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28822.285
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tadpole", "Tadpole.csproj", "{12354CAF-149B-4172-9708-AD2A4525DF6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{833F8A08-974E-43B3-ADDD-D28A59A5AC38}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12354CAF-149B-4172-9708-AD2A4525DF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12354CAF-149B-4172-9708-AD2A4525DF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12354CAF-149B-4172-9708-AD2A4525DF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12354CAF-149B-4172-9708-AD2A4525DF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACEABFCD-0ABA-4253-8109-42A7B365E221}
+	EndGlobalSection
+EndGlobal
