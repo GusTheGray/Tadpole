@@ -14,7 +14,7 @@ namespace Tadpole
             var user = Console.ReadLine();
             //Get password for tadpoles
             Console.Write("Password: ");
-            var pass = Console.ReadLine();
+            var pass = getPassword();
             var count = 0;
             Console.Clear();
 
@@ -84,6 +84,35 @@ namespace Tadpole
             driver.Close();
 
             Console.WriteLine(string.Format("You downloaded {0} pictures! Enjoy!",count));
+        }
+
+        private static string getPassword()
+        {
+            string pass = "";
+
+            do
+            {
+                var key = Console.ReadKey(true);
+
+                if (key.Key != ConsoleKey.Backspace && key.Key != ConsoleKey.Enter)
+                {
+                    pass += key.Key;
+                    Console.Write("*");
+                }
+                else
+                {
+                    if (key.Key == ConsoleKey.Backspace && pass.Length > 0)
+                    {
+                        pass = pass.Substring(0, pass.Length - 1);
+                        Console.Write("\b \b");
+                    }
+                    else if (key.Key == ConsoleKey.Enter)
+                    {
+                        break;
+                    }
+                }
+            } while (true);
+            return pass;
         }
     }
 }
