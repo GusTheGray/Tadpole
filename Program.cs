@@ -19,7 +19,8 @@ namespace Tadpole
             Console.Clear();
 
             //starts the webpage
-            IWebDriver driver = new ChromeDriver("C:/Users/Owner/Downloads/");
+            var dlfolderPath = Environment.ExpandEnvironmentVariables(@"%USERPROFILE%\Downloads");
+            IWebDriver driver = new ChromeDriver(dlfolderPath);
             driver.Url = "https://www.tadpoles.com/home_or_work";
             
             //Log in to site
